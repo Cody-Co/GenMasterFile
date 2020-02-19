@@ -243,8 +243,8 @@ def userprompt():
 # Send email to appropriate users with zip of masterFile
 
 def sendMail():
-    fromaddr = 'daisomfgenerator@gmail.com'
-    toaddr = 'daisomfgenerator@gmail.com'
+    fromaddr = 'add email here'
+    toaddr = 'add email here'
     files = ['\\MF_%s.xlsx' % today, '\\DC_StoreMF_%s.xlsx' % today, '\\amyMF_%s.xlsx' % today]
     msg = MIMEMultipart()
 
@@ -263,7 +263,7 @@ def sendMail():
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(fromaddr, 'Da!s016400')
+    server.login(fromaddr, 'add password here') # change password to appropriate pw
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
