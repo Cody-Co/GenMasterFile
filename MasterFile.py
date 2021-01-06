@@ -268,7 +268,7 @@ def sendMail():
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
 
-
-concatenate_master()
-subMF()
-userprompt()
+if __name__ == "__main__":
+    concatenate_master()
+    subMF()
+    userprompt()
